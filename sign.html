@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <script src="sign.js"></script>
+    <section onsubmit="addvalue()">
+        <div id="signup">
+            <lable for="username">username</lable>
+            <br>
+            <input type="text" id="username" name="username">
+            <br>
+            <label for="password">password</label>
+            <br>
+            <input type="password" id="password" name="password">
+            <br>
+            <label for="Age">Age</label>
+            <br>
+            <input type="number" id="age" name="age">
+            <br>
+            <label for="gender">gender</label>
+            <br>
+            <input type="radio" id="gender" name="gender">female
+            <input type="radio" id="gender" name="gender">male
+            <br>
+            <label for="phonenumber">phonenumber</label>
+            <br>
+            <input type="text" id="phonenumber" name="phonenumber">
+            <br>
+           <input type="submit" onclick="addvalue()">
+        </div>
+    </section>
+    <hr>
+    <section onsubmit="getvalue()">
+        <h1>login</h1>
+        <div>
+            <label for="username">username</label>
+            <br>
+            <input type="text" id="username1" name="username">
+            <br>
+            <label for="password">password</label>
+            <br>
+            <input type="password" id="password1" name="password">
+            <br>
+            <input type="submit" onclick="getvalue()" href="quiz.html">
+            <br>
+            <a href="#"><button>forgetpassword</button></a>
+            <br>
+            <p>donot have account</p>
+            <a hreh="#signup"><button>sign up</button></a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section  >
+        <h1>forgetpassword</h1>
+        <div>
+            <label for="username">username</label>
+            <br>
+            <input type="text" id="username2" name="username">
+            <br>
+            <label for="password">New password</label>
+            <br>
+            <input type="password" id="password2" name="password">
+            <br>
+            <button type="button" onclick="forgetpass()">update</button>
+        </div>
+    </section>
+</body>
+</html>

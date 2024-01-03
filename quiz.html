@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+</head>
+<body onload="load()">
+    <script src="quiz.js"></script>
+    <table onclick="load()">
+        <tr>
+            <th id="qh0"></th>
+            <br>
+            <td>
+                <br>
+                <input type="radio" value="yes" class="radio" name="first">yes
+                <input type="radio" value="no" class="radio" name="first">no
+            </td>
+        </tr>
+
+        <tr>
+            <th id="qh1"></th>
+            <br>
+            <td>
+                <br>
+                <input type="radio" value="yes" class="radio" name="second">yes
+                <input type="radio" value="no" class="radio" name="second">no
+            </td>
+        </tr>
+
+        <tr>
+            <th id="qh2"></th>
+            <br>
+            <td>
+                <br>
+                <input type="radio" value="yes" class="radio" name="third">yes
+                <input type="radio" value="no" class="radio" name="third">no
+            </td>
+        </tr>
+    </table>
+   <input type="submit" onclick="getResult()">
+</body>
+</html>
